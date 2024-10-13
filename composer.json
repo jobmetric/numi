@@ -1,0 +1,67 @@
+{
+    "name": "jobmetric/numi",
+    "description": "An intuitive accounting management panel designed to simplify financial tracking and reporting, empowering businesses to manage their finances with precision and ease.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "jobmetric",
+        "package",
+        "numi",
+        "accounting",
+        "finance",
+        "management",
+        "budgeting",
+        "reporting",
+        "analytics",
+        "transactions",
+        "auditing",
+        "insights",
+        "compliance"
+    ],
+    "homepage": "https://doc.jobmetric.net/package/numi",
+    "authors": [
+        {
+            "name": "Majid Mohammadian",
+            "email": "majeedmohammadian@gmail.com",
+            "homepage": "https://www.linkedin.com/in/majidmohammadian/",
+            "role": "Full Stack Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.1",
+        "ext-json": "*",
+        "laravel/framework": ">=9.19",
+        "jobmetric/laravel-package-core": "^1.12"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "JobMetric\\Numi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JobMetric\\Numi\\NumiServiceProvider"
+            ],
+            "aliases": {
+                "Numi": "JobMetric\\Numi\\Facades\\Numi"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "support": {
+        "issues": "https://github.com/jobmetric/numi/issues",
+        "forum": "https://twitter.com/jobmetric",
+        "source": "https://github.com/jobmetric/numi"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/majidmohammadian"
+        }
+    ]
+}
