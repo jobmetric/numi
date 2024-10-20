@@ -32,11 +32,11 @@ class NumiServiceProvider extends PackageCoreServiceProvider
     public function afterBootPackage(): void
     {
         Panelio::addPanel('numi', [
-            'name' => config('numi.panel_name'),
+            'name' => 'numi::base.panel_name',
             'namespace' => 'JobMetric\Numi\Http\Controllers',
             'args' => [
                 'description' => trans('numi::base.description'),
-                'icon' => 'fas fa-user-shield',
+                'icon' => '<i class="ki-duotone ki-abstract-24 fs-2x"><span class="path1"></span><span class="path2"></span></i>',
             ],
             'permission' => 'numi',
             'position' => 0,

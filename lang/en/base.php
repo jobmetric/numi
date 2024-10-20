@@ -12,6 +12,8 @@ return [
     |
     */
 
+    'panel_name' => 'Accounting (Numi)',
+
     'description' => 'An intuitive accounting management panel designed to simplify financial tracking and reporting, empowering businesses to manage their finances with precision and ease.',
 
     'sections' => [
