@@ -35,7 +35,7 @@ class NumiServiceProvider extends PackageCoreServiceProvider
             'name' => 'numi::base.panel_name',
             'namespace' => 'JobMetric\Numi\Http\Controllers',
             'args' => [
-                'description' => trans('numi::base.description'),
+                'description' => 'numi::base.description',
                 'icon' => '<i class="ki-duotone ki-abstract-24 fs-2x"><span class="path1"></span><span class="path2"></span></i>',
             ],
             'permission' => 'numi',
@@ -43,9 +43,9 @@ class NumiServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('numi', 'info', [
-            'name' => trans('numi::base.sections.info.name'),
+            'name' => 'numi::base.sections.info.name',
             'args' => [
-                'title' => trans('numi::base.sections.info.title'),
+                'title' => 'numi::base.sections.info.title',
                 'icon' => '<i class="ki-duotone ki-information-4 fs-2x"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>',
             ],
             'permission' => 'numi.info',
@@ -53,9 +53,9 @@ class NumiServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('numi', 'accounting', [
-            'name' => trans('numi::base.sections.accounting.name'),
+            'name' => 'numi::base.sections.accounting.name',
             'args' => [
-                'title' => trans('numi::base.sections.accounting.title'),
+                'title' => 'numi::base.sections.accounting.title',
                 'icon' => '<i class="ki-duotone ki-finance-calculator fs-2x"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></i>',
             ],
             'permission' => 'numi.accounting',
@@ -63,9 +63,9 @@ class NumiServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('numi', 'system', [
-            'name' => trans('numi::base.sections.system.name'),
+            'name' => 'numi::base.sections.system.name',
             'args' => [
-                'title' => trans('numi::base.sections.system.title'),
+                'title' => 'numi::base.sections.system.title',
                 'icon' => '<i class="ki-duotone ki-setting-3 fs-2x"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>',
             ],
             'permission' => 'numi.system',
@@ -73,9 +73,9 @@ class NumiServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('numi', 'report', [
-            'name' => trans('numi::base.sections.report.name'),
+            'name' => 'numi::base.sections.report.name',
             'args' => [
-                'title' => trans('numi::base.sections.report.title'),
+                'title' => 'numi::base.sections.report.title',
                 'icon' => '<i class="ki-duotone ki-chart-simple fs-2x"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
             ],
             'permission' => 'numi.report',
