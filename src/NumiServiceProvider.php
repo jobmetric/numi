@@ -42,7 +42,7 @@ class NumiServiceProvider extends PackageCoreServiceProvider
                 'icon' => '<i class="ki-duotone ki-abstract-24 fs-2x"><span class="path1"></span><span class="path2"></span></i>',
             ],
             'permission' => 'numi',
-            'position' => 0,
+            'position' => 20,
         ]);
 
         Panelio::addSection('numi', 'info', [
