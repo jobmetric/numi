@@ -5,6 +5,7 @@ namespace JobMetric\Numi;
 use JobMetric\Numi\Providers\EventServiceProvider;
 use JobMetric\PackageCore\Enums\RegisterClassTypeEnum;
 use JobMetric\PackageCore\Exceptions\RegisterClassTypeNotFoundException;
+use JobMetric\PackageCore\Exceptions\ViewFolderNotFoundException;
 use JobMetric\PackageCore\PackageCore;
 use JobMetric\PackageCore\PackageCoreServiceProvider;
 use JobMetric\Panelio\Facades\Panelio;
@@ -14,12 +15,14 @@ class NumiServiceProvider extends PackageCoreServiceProvider
 {
     /**
      * @throws RegisterClassTypeNotFoundException
+     * @throws ViewFolderNotFoundException
      */
     public function configuration(PackageCore $package): void
     {
         $package->name('numi')
             ->hasConfig()
             ->hasTranslation()
+            ->hasView()
             ->registerClass('event', EventServiceProvider::class, RegisterClassTypeEnum::REGISTER())
             ->registerClass('Numi', Numi::class, RegisterClassTypeEnum::SINGLETON());
     }

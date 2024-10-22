@@ -18,12 +18,12 @@ return [
 
     'sections' => [
         'info' => [
-            'name' => 'Information',
-            'title' => 'Information Management',
+            'name' => 'Base Information',
+            'title' => 'Base Information',
         ],
         'accounting' => [
             'name' => 'Accounting',
-            'title' => 'Accounting',
+            'title' => 'Accounting and Auditing',
         ],
         'system' => [
             'name' => 'System',
@@ -34,5 +34,9 @@ return [
             'title' => 'Management Reports',
         ],
     ],
+
+    'dashboard' => [
+        'title' => 'Accounting Dashboard (Numi)',
+    ]
 
 ];
