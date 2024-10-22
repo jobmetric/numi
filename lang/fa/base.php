@@ -37,6 +37,20 @@ return [
 
     'dashboard' => [
         'title' => 'داشبورد حسابداری (Numi)',
+        'tiles' => [
+            'total_income' => 'درآمد کل',
+            'total_expense' => 'هزینه کل',
+            'total_profit' => 'سود کل',
+            'total_loss' => 'زیان کل',
+            'total_assets' => 'دارایی ها',
+            'total_liabilities' => 'بدهی ها',
+            'total_equity' => 'سرمایه',
+            'total_clients' => 'مشتریان',
+            'total_suppliers' => 'تامین کنندگان',
+            'total_products' => 'محصولات',
+            'total_invoices' => 'فاکتورها',
+            'total_transactions' => 'تراکنش ها',
+        ],
     ]
 
 ];

@@ -37,6 +37,20 @@ return [
 
     'dashboard' => [
         'title' => 'Accounting Dashboard (Numi)',
+        'tiles' => [
+            'total_income' => 'Total Income',
+            'total_expense' => 'Total Expense',
+            'total_profit' => 'Total Profit',
+            'total_loss' => 'Total Loss',
+            'total_assets' => 'Assets',
+            'total_liabilities' => 'Liabilities',
+            'total_equity' => 'Equity',
+            'total_clients' => 'Clients',
+            'total_suppliers' => 'Suppliers',
+            'total_products' => 'Products',
+            'total_invoices' => 'Invoices',
+            'total_transactions' => 'Transactions',
+        ],
     ]
 
 ];
